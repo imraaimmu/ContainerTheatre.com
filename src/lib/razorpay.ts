@@ -57,15 +57,21 @@ export interface VerifyPaymentPayload {
   razorpay_order_id: string;
   razorpay_signature: string;
   bookingDetails: {
+    customerId?: string;
     customerName: string;
     customerPhone: string;
     customerEmail: string;
+    packageId: string;
     packageName: string;
     bookingDate: string;
     timeSlot: string;
     guests: number;
+    specialRequests?: string;
     totalAmount: number;
     advancePaid: number;
+    isWeekend: boolean;
+    addOns: Array<{ id: string; name: string; price: number }>;
+    addOnsPrice: number;
   };
 }
 

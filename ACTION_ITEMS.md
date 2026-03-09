@@ -21,7 +21,7 @@
   ```
 - [ ] Cost: ~0.20 INR per OTP (much cheaper than Firebase)
 
-### 2. Razorpay Setup
+### 3. Razorpay Setup
 - [ ] Create Razorpay account at https://razorpay.com
 - [ ] Complete KYC verification
 - [ ] Get API keys from Dashboard > Settings > API Keys
@@ -32,7 +32,7 @@
   NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_live_xxxxx
   ```
 
-### 3. Admin Phone Numbers
+### 4. Admin Phone Numbers
 - [ ] Update admin whitelist in `src/lib/auth.ts`:
   ```typescript
   const ADMIN_PHONES = [
@@ -41,7 +41,7 @@
   ];
   ```
 
-### 4. Contact Information
+### 5. Contact Information
 - [ ] Update phone number in `src/app/page.tsx` (Contact section ~line 330)
 - [ ] Update WhatsApp link with actual number
 - [ ] Update Instagram handle
